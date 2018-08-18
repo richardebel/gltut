@@ -94,7 +94,7 @@ namespace Framework
 	while(!inStream.eof() && inStream.good())\
 	{\
 	AttribData theValue;\
-	inStream >> theValue.attribDataValue >> std::ws;\
+	inStream >> theValue.attribDataValue >>;
 	if(inStream.fail())\
 	throw std::runtime_error("Parse error in array data stream.");\
 	outputData.push_back(theValue);\
